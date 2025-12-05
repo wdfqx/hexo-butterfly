@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="UTF-8"></head><body>
+<ul id="f353cfd3-2666-4e6a-8610-8c23a007a0a9" style="list-style:none; padding:0; margin:0; display:block;"></ul>
+<script async>
+  const servers = [
+    { n: "主站", u: "https://987632.xyz" },
+    { n: "Cloudflare" , u: "https://blog-74z.pages.dev" },
+    { n: "EdgeOne", u: "https://4e2w7gfrdi.zi4dbek.top" }
+  ];
+
+  function ping(url){
+    return new Promise((resolve) => {
+      const t = performance.now();
+      fetch(url, {
+    method: "HEAD",
+    cache: "no-store"
+      })
+      .then(() => {
+    const delay = Math.round(performance.now() - t);
+    resolve(delay);
+      })
+      .catch(() => {
+    const delay = Math.round(performance.now() - t);
+    resolve(delay > 10000 ? null : delay);
+      });
+
+      setTimeout(() => resolve(null), 10000);
+    });
+  }
+
+  function getDelayColor(delay) {
+    if (delay === null) return '#800000';
+    if (delay < 500) return '#003300';
+    if (delay < 1000) return '#006600';
+    if (delay < 2000) return '#999900';
+    return '#555555';
+  }
+
+  (async ()=>{
+    const ul = document.getElementById("f353cfd3-2666-4e6a-8610-8c23a007a0a9");
+
+    servers.forEach((s,i)=>{
+
+      const sub = window.parent.location.pathname;
+      const jumpURL = s.u + sub;
+
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${jumpURL}" target="_parent" rel="noopener noreferrer" style="display:flex; justify-content:space-between; align-items:center; background-color:#49b1f5; color:#FFFFFF; text-decoration:none; padding:6px 15px; border-radius:4px; font-weight:500; transition:all 0.2s ease; box-shadow:0 1px 3px rgba(0,0,0,0.1); margin-bottom:8px;">${s.n}<span style="background-color:#800000; padding:2px 8px; border-radius:10px; font-size:0.9em;">检测中</span></a>`;
+      ul.appendChild(li);
+    });
+
+    const buttons = ul.querySelectorAll('li a');
+    const res = await Promise.all(servers.map(s=>ping(s.u)));
+
+    servers.forEach((s,i)=>{
+      const delay = res[i];
+      const delayColor = getDelayColor(delay);
+      const span = buttons[i].querySelector('span');
+      span.textContent = delay !== null ? delay + ' ms' :'-1 ms';
+      span.style.backgroundColor = delayColor;
+    });
+  })();
+</script>
+</body></html>
