@@ -43,8 +43,12 @@ top:
         const ul = document.getElementById("f353cfd3-2666-4e6a-8610-8c23a007a0a9");
         
         servers.forEach((s,i)=>{
+
+	  const sub = location.pathname.replace(/[^/]+$/, '');
+          const jumpURL = s.u.replace(/\/+$/, '') + sub;
+
           const li = document.createElement("li");
-          li.innerHTML = `<a href="${s.u}" rel="noopener noreferrer" style="display: flex; justify-content: space-between; align-items: center; background-color: #49b1f5; color: #FFFFFF; text-decoration: none; padding: 6px 15px; border-radius: 4px; font-weight: 500; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 8px;">${s.n}<span style="background-color: #800000; padding: 2px 8px; border-radius: 10px; font-size: 0.9em;">检测中</span></a>`;
+          li.innerHTML = `<a href="${jumpURL}" rel="noopener noreferrer" style="display: flex; justify-content: space-between; align-items: center; background-color: #49b1f5; color: #FFFFFF; text-decoration: none; padding: 6px 15px; border-radius: 4px; font-weight: 500; transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 8px;">${s.n}<span style="background-color: #800000; padding: 2px 8px; border-radius: 10px; font-size: 0.9em;">检测中</span></a>`;
           ul.appendChild(li);
         });
 
