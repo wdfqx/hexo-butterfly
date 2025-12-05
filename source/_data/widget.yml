@@ -36,7 +36,7 @@ top:
         if (delay < 500) return '#003300';
         if (delay < 1000) return '#006600';
         if (delay < 2000) return '#999900';
-        return '#800000';
+        return '#555555';
       }
 
       (async ()=>{
