@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>wdfqx Blog</title>
+  <title>naki-im Blog</title>
   
   <subtitle>爱你所爱，知你所知，得你所愿</subtitle>
   <link href="https://987632.xyz/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://987632.xyz/</id>
   
   <author>
-    <name>wdfqx</name>
+    <name>naki-im</name>
     
   </author>
   
