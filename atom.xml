@@ -136,13 +136,13 @@
     
     <category term="CDN" scheme="https://www.987632.xyz/tags/CDN/"/>
     
-    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
-    
-    <category term="ip6.arpa" scheme="https://www.987632.xyz/tags/ip6-arpa/"/>
-    
     <category term="域名" scheme="https://www.987632.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
+    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
+    
     <category term="DNS" scheme="https://www.987632.xyz/tags/DNS/"/>
+    
+    <category term="ip6.arpa" scheme="https://www.987632.xyz/tags/ip6-arpa/"/>
     
   </entry>
   
@@ -176,13 +176,13 @@
     
     <category term="CDN" scheme="https://www.987632.xyz/tags/CDN/"/>
     
-    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
-    
     <category term="域名" scheme="https://www.987632.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
     
-    <category term="DNS" scheme="https://www.987632.xyz/tags/DNS/"/>
-    
     <category term="IPv4" scheme="https://www.987632.xyz/tags/IPv4/"/>
+    
+    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
+    
+    <category term="DNS" scheme="https://www.987632.xyz/tags/DNS/"/>
     
   </entry>
   
@@ -216,15 +216,15 @@
     
     <category term="CDN" scheme="https://www.987632.xyz/tags/CDN/"/>
     
-    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
-    
     <category term="域名" scheme="https://www.987632.xyz/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-    <category term="DNS" scheme="https://www.987632.xyz/tags/DNS/"/>
     
     <category term="IPv4" scheme="https://www.987632.xyz/tags/IPv4/"/>
     
+    <category term="IPv6" scheme="https://www.987632.xyz/tags/IPv6/"/>
+    
     <category term="记录" scheme="https://www.987632.xyz/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="DNS" scheme="https://www.987632.xyz/tags/DNS/"/>
     
   </entry>
   
