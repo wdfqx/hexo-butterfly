@@ -1,0 +1,15 @@
+- class_name:
+  class_desc:
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn
+      avatar: https://hexo.io/logo.svg
+      descr: 简单快速的网站框架
+    - name: Google
+      link: https://www.google.com/
+      avatar: https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg
+      descr: 可能是迄今为止最全面的搜索引擎
+    - name: Bing
+      link: https://bing.com/
+      avatar: https://cdn.geekwire.com/wp-content/uploads/2020/10/0EVE9TeW_400x400-300x300.png
+      descr: 可能是迄今为止最好用的搜索引擎

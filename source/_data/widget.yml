@@ -1,0 +1,5 @@
+top:
+  - name: 线路切换
+    icon: fa-wave-square
+    order:
+    html: <iframe src="/static/route.html" loading="lazy" style="width:100%; border:none; height:100%;"></iframe>

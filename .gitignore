@@ -1,0 +1,7 @@
+public/
+.deploy_git/
+db.json
+node_modules/
+**/.obsidian/
+**/.obsidian/*
+public.*
